@@ -38,14 +38,14 @@
 					<div style="flex:1">
 						<p class="quantity">{{item.quantity}}</p>
 						<div class="quantity">
-							<img class="chg-quantity" src="{% static  'images/arrow-up.png' %}">
+							<img class="chg-quantity" src="{% static  'images/up.png' %}">
 
-							<img class="chg-quantity" src="{% static  'images/arrow-down.png' %}">
+							<img class="chg-quantity" src="{% static  'images/down.png' %}">
 						</div>
 					</div>
 					<div style="flex:1"><p>${{item.get_total|floatformat:2}}</p></div>
-				</div>
 				{% endfor %}
+				</div>
 			</div>
 		</div>
 	</div>
