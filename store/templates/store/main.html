@@ -23,7 +23,7 @@
             for (var i = 0; i < cookies.length; i++) {
                 var cookie = cookies[i].trim();
                 if (cookie.substring(0, name.length + 1) === (name + '='))
-                {   cookieValue = deodeURIComponent(cookie.substring(
+                {   cookieValue = decodeURIComponent(cookie.substring(
                         name.length + 1));
                     break;
                 }
@@ -44,7 +44,7 @@
           <li><a href="{% url 'store' %}" class="nav-link px-2 text-white">Ecom</a></li>
           <li><a href="{% url 'store' %}" class="nav-link px-2 text-white">Store</a></li>
             <a href="{% url 'cart' %}">
-	    		<img  id="cart-icon" src="{% static 'images/shopping-cart.png' %}">
+	    		<img  id="cart-icon" src="{% static 'images/shopping.jpg' %}">
 	    	</a>
 	    	<p id="cart-total">0</p>
 
